@@ -66,9 +66,14 @@ background: #002e43;
 
 }
 
-#fotosCarrusel{
+#myCarousel{
+margin-bottom: 2rem;
 
-  
+}
+
+.carousel-item{
+
+  height: 500px;
 }
 
 /*------------------------------------------------------
