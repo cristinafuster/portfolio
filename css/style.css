@@ -8,10 +8,8 @@ body {
   	font-family: 'Lato', sans-serif;
   	font-size: .95em;
     font-weight: 300;
-    color: #002e43;
-    background-color: #fff;
-    
-    
+    color: black;
+    background-color: #eee;
 }
 
 p {
@@ -25,17 +23,8 @@ h1{
     font-family: 'Oswald', sans-serif;
     font-size:3em;
     text-transform: uppercase;
-    color: #fff;
 }
 
-
-h1:first-letter{
-
-width: 20px;
-height: 20px;
-border-radius: 30px;
-
-}
 
 
 h2 {
@@ -54,6 +43,7 @@ font-weight: 700;
 h4{
 
   font-size: 1.2em;
+  line-height: 2em;
  
 }
 
@@ -100,8 +90,7 @@ NAVEGADOR
 ------------------------------------------------------*/
  nav{
     width: 100%;
-    height: 90px;
-    background: rgba(0, 46, 67, .6);  
+    height: 90px; 
     letter-spacing: 2px;
     top: 0;
     left:0;
@@ -110,6 +99,8 @@ NAVEGADOR
     z-index:3;
     line-height: 90px;
     padding: 0 50px;
+    border-bottom: 1px dashed #000;
+    background: #eee;
 
 }
 
@@ -126,7 +117,6 @@ nav ul {
 }
 
 nav a {
-    color:#fff;
     padding: 8px 8px;
     display: block;
     font-size: .9em;
@@ -134,46 +124,50 @@ nav a {
     letter-spacing: 2px;
     text-decoration:none;
     font-weight: 700;
+    color: #000;
 
     
 }
 
+.logo{
+
+  font-size: 2em;
+  text-transform:uppercase;
+  font-weight: 700;
+  margin-left:0;
+}
+.logo:first-letter{
+
+  background:black;
+  color:#eee;
+}
+
 
 /*------------------------------------------------------
 PROFILE
 ------------------------------------------------------*/
-
-
-#inicio h1{
-
-  text-shadow: 0 0 2px #002e43, 0 0 2px #002e43, 0 0 2px #002e43;
-}
-
-#inicio h1:first-letter{
-
-background: #002e43; 
-
-}
-
 #inicio .circulo{
-background: url("../img/intTrade.png") no-repeat center;
+background: url("../img/businesswoman.svg") no-repeat center;
 position: relative;
 
 }
 
+.flaticon-avatar::before {
+    font-size: 15em !important;
+    display: block;
+    float:none;
+    text-align:center;
+    padding: 1px;
+    text-decoration:none;
+
+}
 
 /*------------------------------------------------------
 PROFILE
 ------------------------------------------------------*/
-#experience h1:first-letter{
-
-background: #e38530;
-
-}
 
 #experience h1{
 
-text-shadow: 0 0 2px #e38530, 0 0 2px #e38530, 0 0 2px #e38530;
 text-align:center;
 }
 
@@ -196,10 +190,6 @@ border-radius:5px;
 
 }
 
-#experience h4:last-line{
-
-  color:green;
-}
 
 
 
@@ -210,17 +200,7 @@ border-radius:5px;
 /*------------------------------------------------------
 SKILLS
 ------------------------------------------------------*/
-#skills h1{
 
-text-shadow: 0 0 3px #e4535e, 0 0 3px #e4535e, 0 0 3px #e4535e;
-  
-}
-
-#skills h1:first-letter{
-
-background: #e4535e;
-
-}
 /*------------------------------------------------------
 PROFILE
 ------------------------------------------------------*/
@@ -237,6 +217,8 @@ CONTACTO
 /* IMAGENES y COLORES
 
 AZUL MARINO background: rgba(0, 46, 67, .8);  
+amarillo f9c231
+
 
 
 <a href='https://www.freepik.com/free-vector/modern-international-trade-concept-with-flat-design_2533535.htm'>Designed by Freepik</a> */
