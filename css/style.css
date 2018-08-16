@@ -12,6 +12,29 @@ body {
     background-color: #eee;
 }
 
+body::before, body::after {
+     content: '';  
+     background: #DBA901; 
+     position: fixed;
+     z-index: 999;
+     height: 10px;  
+
+}
+ 
+body::before {
+     width: 40%;  
+     left: 0;
+     top: 0;
+     
+}
+ 
+body::after {
+     width: 60%;  
+     bottom: 0;
+     right: 0;
+     
+}
+
 p {
     font-size: 1.1em;
 }
@@ -72,12 +95,6 @@ li{
   
 }
 
-.smallPadding{
-  
-  padding: 20px;
-
-  
-}
 
 
 /*------------------------------------------------------
@@ -145,11 +162,10 @@ PROFILE, CONTACT
   border-radius: 90%;
   border: 1px dashed #000; 
   padding: 40px;
-
 }
 
 img{
-  height: 99%;
+  width:80%;
 }
 
 .img-opacity img {
@@ -194,24 +210,51 @@ text-align:center;
 
 #experience h3, #experience h4{
 line-height: 3em;
+
 }
 
 #experience h4{
 
-color: #e38530;
+color: rgba(219, 169, 1);
 
 }
 
 #experience h3:last-child{
 
-border-bottom-style: dotted;
-border-color: #e38530;
+border-top-style: dotted;
+border-color: rgba(219, 169, 1,.7);
 border-width:1px;
-border-radius:5px;
+
 
 }
 
 
+#experience .devider {
+  border-left: 2px solid rgba(0,0,0, 0.1);
+}
+
+#experience .devider:hover{
+
+  font-weight:700;
+  border-left: 3px solid rgba(0,0,0);
+
+}
+
+#experience h3:last-child:hover{
+
+border-top: 2px solid rgba(219, 169, 1);
+
+
+}
+
+#experience::before, #experience::after {
+     content: '';  
+     background: #DBA901; 
+     position: fixed;
+     z-index: 999;
+     height: 10px;  
+
+}
 
 
 
