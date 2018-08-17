@@ -29,7 +29,7 @@ body::before {
 }
  
 body::after {
-     width: 60%;  
+     width: 55%;  
      bottom: 0;
      right: 0;
      
@@ -203,7 +203,7 @@ transition:all 1.2s ease-in-out;
 EXPERIENCE
 ------------------------------------------------------*/
 
-#experience h1{
+#experience h1, #skills h1{
 
 text-align:center;
 }
@@ -213,11 +213,6 @@ line-height: 3em;
 
 }
 
-#experience h4{
-
-color: rgba(219, 169, 1);
-
-}
 
 #experience h3:last-child{
 
@@ -225,18 +220,38 @@ border-top-style: dotted;
 border-color: rgba(219, 169, 1,.7);
 border-width:1px;
 
-
 }
 
 
-#experience .devider {
+#experience .devider{
   border-left: 2px solid rgba(0,0,0, 0.1);
+
+   
+}
+
+#experience ul li:first-of-type{
+
+  list-style:disc;
+  color: rgba(219, 169, 1);
+  font-size: 1.5em;
+  line-height: 2em;
+  font-weight: 700;
+ 
+}
+
+#experience ul li:first-of-type:hover{
+
+  list-style:square;
+  color: grey;
+
+ 
 }
 
 #experience .devider:hover{
 
   font-weight:700;
   border-left: 3px solid rgba(0,0,0);
+
 
 }
 
@@ -247,22 +262,24 @@ border-top: 2px solid rgba(219, 169, 1);
 
 }
 
-#experience::before, #experience::after {
-     content: '';  
-     background: #DBA901; 
-     position: fixed;
-     z-index: 999;
-     height: 10px;  
-
-}
-
 
 
 
 
 /*------------------------------------------------------
-SKILLS
+FOOTER
 ------------------------------------------------------*/
+footer{
+
+  text-align:center;
+  line-height: .6em;
+  padding:3em;
+
+
+
+
+}
+
 
 /*------------------------------------------------------
 PROFILE
