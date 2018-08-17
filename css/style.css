@@ -197,8 +197,6 @@ transition:all 1.2s ease-in-out;
 }
 
 
-
-
 /*------------------------------------------------------
 EXPERIENCE
 ------------------------------------------------------*/
@@ -208,8 +206,8 @@ EXPERIENCE
 text-align:center;
 }
 
-#experience h3, #experience h4{
-line-height: 3em;
+#experience h3 {
+line-height: 2em;
 
 }
 
@@ -217,7 +215,7 @@ line-height: 3em;
 #experience h3:last-child{
 
 border-top-style: dotted;
-border-color: rgba(219, 169, 1,.7);
+border-color: rgba(219, 169, 1,.5);
 border-width:1px;
 
 }
@@ -225,32 +223,36 @@ border-width:1px;
 
 #experience .devider{
   border-left: 2px solid rgba(0,0,0, 0.1);
-
    
 }
 
+
+
+
 #experience ul li:first-of-type{
 
-  list-style:disc;
+  list-style: disc;
   color: rgba(219, 169, 1);
   font-size: 1.5em;
   line-height: 2em;
   font-weight: 700;
- 
+
 }
+
+
 
 #experience ul li:first-of-type:hover{
 
   list-style:square;
   color: grey;
 
- 
 }
 
 #experience .devider:hover{
 
   font-weight:700;
   border-left: 3px solid rgba(0,0,0);
+
 
 
 }
@@ -263,6 +265,95 @@ border-top: 2px solid rgba(219, 169, 1);
 }
 
 
+/*------------------------------------------------------
+SKILLS
+------------------------------------------------------*/
+#skills h4:before{
+content: "\f192";
+font-family: "Font Awesome 5 Free";
+margin-right: 5px;
+color: rgba(219, 169, 1);
+}
+
+/*------------------------------------------------------
+LANGUAGES
+------------------------------------------------------*/
+
+#languages{ 
+  list-style: none;
+  width: 296px;
+  margin: 50px auto 0;
+  position: relative;
+  line-height: 2em;
+  padding: 30px 0;
+  
+}
+
+
+#languages li { 
+  margin-bottom:50px; 
+  background:#e9e5e2;
+  background-image: linear-gradient(top, #e1ddd9, #e9e5e2);
+  height:20px; 
+  border-radius:10px; 
+  box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;   
+
+}
+
+#languages li h3 { 
+  position:relative; 
+  top:-25px;
+}
+
+.bar { 
+  height:18px; 
+  margin:1px 2px;  
+  position:absolute;
+  border-radius:10px;
+  box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;   
+  
+}
+
+.boton{
+
+  opacity:0;
+}
+
+.boton.visible{
+  opacity: 1;
+  background-color: rgba(219, 169, 1);
+  
+}
+
+.spanish {
+  width:99%; 
+  transition:all .2s ease-out;
+}
+
+.galician {
+  width:95%;
+  transition:all .3s ease-out;
+}
+
+.german {
+  width:70%;
+  transition:all .4s ease-out;
+
+}
+
+.english {
+  width:70%;
+  transition:all .5s ease-out;
+
+}
+.french {
+  width:60%;
+  transition:all .6s ease-out;
+}
+.italian {
+  width:55%;
+  transition:all .7s ease-out;
+}
 
 
 
@@ -281,24 +372,3 @@ footer{
 }
 
 
-/*------------------------------------------------------
-PROFILE
-------------------------------------------------------*/
-
-
-/*------------------------------------------------------
-PROFILE
-------------------------------------------------------*/
-
-/*------------------------------------------------------
-CONTACTO
-------------------------------------------------------*/
-
-/* IMAGENES y COLORES
-
-AZUL MARINO background: rgba(0, 46, 67, .8);  
-amarillo f9c231
-
-
-
-<a href='https://www.freepik.com/free-vector/modern-international-trade-concept-with-flat-design_2533535.htm'>Designed by Freepik</a> */

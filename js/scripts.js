@@ -21,6 +21,26 @@ $(window).on('scroll', retraer);
 				}
 			}
 
+///experimento//
+
+$(window).on('scroll', mostrar);
+
+	function mostrar(){
+
+	let scrollActual = $(window).scrollTop();
+	let altoPantalla = $(window).innerHeight() / 2; 
+	let profundidadBoton  = $('#languages .boton').offset().top;
+	let scrollObjetivo = profundidadBoton - altoPantalla;
+
+	if(scrollActual >= scrollObjetivo) {
+
+	$('#languages .boton').addClass('visible');
+
+	}
+}
+
+////fin del experimento///
+
 
 
 
