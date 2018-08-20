@@ -90,8 +90,8 @@ li{
 
 .paddingSection{
   
-  padding: 50px 120px;
-  margin: 40px;
+  padding: 40px 150px;
+  margin: 20px auto;
   
 }
 
@@ -155,22 +155,26 @@ nav a {
 
 
 /*------------------------------------------------------
-PROFILE, CONTACT
+ABOUT, CONTACT
 ------------------------------------------------------*/
 .circulo{
 
   border-radius: 90%;
   border: 1px dashed #000; 
-  padding: 40px;
+  padding: 50px;
 }
 
-img{
+#inicio img{
   width:80%;
+}
+
+#contact img{
+  width:60%;
 }
 
 .img-opacity img {
   position:absolute;
-  margin: 0px;
+  margin: 30px;
   transition:all .6s ease-in-out;
 
 }
@@ -194,6 +198,11 @@ img{
 .img-opacity:hover img{
 transition:all 1.2s ease-in-out;
 
+}
+
+.paddingBottom{
+
+  padding-bottom:30px;
 }
 
 
@@ -240,7 +249,6 @@ border-width:1px;
 }
 
 
-
 #experience ul li:first-of-type:hover{
 
   list-style:square;
@@ -268,7 +276,7 @@ border-top: 2px solid rgba(219, 169, 1);
 /*------------------------------------------------------
 SKILLS
 ------------------------------------------------------*/
-#skills h4:before{
+#habilidades h4:before{
 content: "\f192";
 font-family: "Font Awesome 5 Free";
 margin-right: 5px;
@@ -282,7 +290,7 @@ LANGUAGES
 #languages{ 
   list-style: none;
   width: 296px;
-  margin: 50px auto 0;
+  margin: 0px 5px;
   position: relative;
   line-height: 2em;
   padding: 30px 0;
@@ -300,9 +308,9 @@ LANGUAGES
 
 }
 
-#languages li h3 { 
+#languages li h4 { 
   position:relative; 
-  top:-25px;
+  top:-30px;
 }
 
 .bar { 
@@ -321,42 +329,84 @@ LANGUAGES
 
 .boton.visible{
   opacity: 1;
-  background-color: rgba(219, 169, 1);
+  
   
 }
 
 .spanish {
   width:99%; 
-  transition:all .2s ease-out;
+  transition:all .4s ease-out;
+  background-color: #fdc508;
 }
 
 .galician {
   width:95%;
-  transition:all .3s ease-out;
+  transition:all .5s ease-out;
+  background-color: #e9b301;
 }
 
 .german {
   width:70%;
-  transition:all .4s ease-out;
+  transition:all .6s ease-out;
+  background-color: rgba(219, 169, 1);
 
 }
 
 .english {
   width:70%;
-  transition:all .5s ease-out;
+  transition:all .7s ease-out;
+  background-color: #cc9e00;
 
 }
 .french {
   width:60%;
-  transition:all .6s ease-out;
+  transition:all .9s ease-out;
+  background-color:#b08800;
 }
 .italian {
   width:55%;
-  transition:all .7s ease-out;
+  transition:all .9s ease-out;
+  background-color: #947200;
+}
+
+/*------------------------------------------------------
+CONTACT
+------------------------------------------------------*/
+
+#contact h2:before{
+
+font-family: "Font Awesome 5 Free";
+margin-right: 5px;
+color: rgba(219, 169, 1);
+font-weight: 900;
+
 }
 
 
+#contact h2:first-of-type:before{
+content: "\f0e0";
 
+}
+
+#contact h2:nth-of-type(2):before {
+  content: "\f3c5";
+}
+
+#contact h2:nth-of-type(3):before {
+  content: "\f072";
+}
+
+
+/*------------------------------------------------------
+LEGAL
+------------------------------------------------------*/
+#legal h1{
+
+font-size:2em;
+padding-bottom: 10px;
+padding-top: 10px;
+
+}
 /*------------------------------------------------------
 FOOTER
 ------------------------------------------------------*/
@@ -365,8 +415,6 @@ footer{
   text-align:center;
   line-height: .6em;
   padding:3em;
-
-
 
 
 }
