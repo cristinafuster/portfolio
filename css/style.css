@@ -90,11 +90,10 @@ li{
 
 .paddingSection{
   
-  padding: 40px 150px;
-  margin: 20px auto;
+  padding: 30px 150px;
+  margin: 20px 20px;
   
 }
-
 
 
 /*------------------------------------------------------
@@ -206,6 +205,7 @@ transition:all 1.2s ease-in-out;
 }
 
 
+
 /*------------------------------------------------------
 EXPERIENCE
 ------------------------------------------------------*/
@@ -217,21 +217,22 @@ text-align:center;
 
 #experience h3 {
 line-height: 2em;
-
+text-align:right;
+font-size: 1.4em;
 }
 
-
-#experience h3:last-child{
+ #experience li:nth-child(1){
 
 border-top-style: dotted;
-border-color: rgba(219, 169, 1,.5);
 border-width:1px;
-
+border-color: rgba(219, 169, 1,.5);
 }
+
 
 
 #experience .devider{
-  border-left: 2px solid rgba(0,0,0, 0.1);
+  border-left: 1px solid rgba(0,0,0, 0.1);
+
    
 }
 
@@ -242,7 +243,7 @@ border-width:1px;
 
   list-style: disc;
   color: rgba(219, 169, 1);
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 2em;
   font-weight: 700;
 
@@ -253,6 +254,7 @@ border-width:1px;
 
   list-style:square;
   color: grey;
+  
 
 }
 
@@ -265,9 +267,9 @@ border-width:1px;
 
 }
 
-#experience h3:last-child:hover{
+#experience h3:last-child:hover, #experience li:first-child:hover{
 
-border-top: 2px solid rgba(219, 169, 1);
+border-top: 3px solid rgba(219, 169, 1);
 
 
 }
@@ -334,40 +336,50 @@ LANGUAGES
 }
 
 .spanish {
-  width:99%; 
-  transition:all .4s ease-out;
+  width:100%; 
   background-color: #fdc508;
+  animation:spanish 2s ease-out;
 }
 
 .galician {
   width:95%;
-  transition:all .5s ease-out;
   background-color: #e9b301;
+  animation:galician 2s ease-out;
 }
 
 .german {
-  width:70%;
-  transition:all .6s ease-out;
+  width:68%;
   background-color: rgba(219, 169, 1);
+  animation: german 2s ease-out;
 
 }
 
 .english {
-  width:70%;
-  transition:all .7s ease-out;
+  width:68%;
   background-color: #cc9e00;
+  animation: english 2s ease-out;
 
 }
 .french {
   width:60%;
-  transition:all .9s ease-out;
   background-color:#b08800;
+  animation: french 2s ease-out;
 }
 .italian {
   width:55%;
-  transition:all .9s ease-out;
   background-color: #947200;
+  animation: italian 2s ease-out;
 }
+
+
+
+@keyframes spanish {0%  { width:0px;} 100%{ width:100%;}  }
+@keyframes galician { 0%  { width:0px;} 100%{ width:95%;}  }
+@keyframes german     { 0%  { width:0px;} 100%{ width:68%;}  }
+@keyframes english   { 0%  { width:0px;} 100%{ width:68%;}  }
+@keyframes french   { 0%  { width:0px;} 100%{ width:60%;}  }
+@keyframes italian   { 0%  { width:0px;} 100%{ width:55%;}  }
+
 
 /*------------------------------------------------------
 CONTACT
