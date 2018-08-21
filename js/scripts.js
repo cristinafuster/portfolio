@@ -29,12 +29,12 @@ $(window).on('scroll', mostrar);
 
 	let scrollActual = $(window).scrollTop();
 	let altoPantalla = $(window).innerHeight() / 2; 
-	let profundidadBoton  = $('#languages .boton').offset().top;
+	let profundidadBoton  = $('#languages .boton, #experience .devider').offset().top;
 	let scrollObjetivo = profundidadBoton - altoPantalla;
 
 	if(scrollActual >= scrollObjetivo) {
 
-	$('#languages .boton').addClass('visible');
+	$('#languages .boton, #experience .devider').addClass('visible');
 
 	}
 }

@@ -160,7 +160,7 @@ ABOUT, CONTACT
 
   border-radius: 90%;
   border: 1px dashed #000; 
-  padding: 50px;
+  padding: 20px;
 }
 
 #inicio img{
@@ -205,17 +205,59 @@ transition:all 1.2s ease-in-out;
 }
 
 
+.tooltip {
+  background-color: #DBA901;
+  position: relative;
+  display: inline-block;
+  padding: 1em 3em;
+  color: black;
+  opacity:1;
+  z-index:2;
+  }
 
+ #education .tooltip {
+
+  padding: 5em 3em;
+ 
+  }
+
+.tooltip::before {
+  border-right: 20px solid #DBA901;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  width: 0;
+  height: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  bottom:6em;
+}
+
+#education .tooltip::before {
+  border-bottom: 15px solid #DBA901;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  width: 0;
+  height: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 390px;
+
+
+}
 /*------------------------------------------------------
 EXPERIENCE
 ------------------------------------------------------*/
 
-#experience h1, #skills h1{
+#experience h1, #skills h1, #education h1{
 
 text-align:center;
 }
 
-#experience h3 {
+#experience h3,#experience p {
 line-height: 2em;
 text-align:right;
 font-size: 1.4em;
@@ -232,11 +274,15 @@ border-color: rgba(219, 169, 1,.5);
 
 #experience .devider{
   border-left: 1px solid rgba(0,0,0, 0.1);
-
-   
+  opacity:0;
+  transition: 1.5s ease-in-out;
+ 
 }
-
-
+#experience .devider.visible{
+  opacity:1;
+  border-left: 1px solid rgba(0,0,0, 0.8);
+ 
+}
 
 
 #experience ul li:first-of-type{
@@ -261,8 +307,6 @@ border-color: rgba(219, 169, 1,.5);
 #experience .devider:hover{
 
   font-weight:700;
-  border-left: 3px solid rgba(0,0,0);
-
 
 
 }
@@ -276,14 +320,23 @@ border-top: 3px solid rgba(219, 169, 1);
 
 
 /*------------------------------------------------------
-SKILLS
+SKILLS, EDUCATION
 ------------------------------------------------------*/
-#habilidades h4:before{
-content: "\f192";
+#habilidades h4:before, #education li:before{
+content: "\f111";
 font-family: "Font Awesome 5 Free";
 margin-right: 5px;
+}
+
+#habilidades h4:before{
 color: rgba(219, 169, 1);
 }
+
+#education li:before{
+color: black;
+
+}
+
 
 /*------------------------------------------------------
 LANGUAGES
@@ -331,43 +384,43 @@ LANGUAGES
 
 .boton.visible{
   opacity: 1;
-  
+  background-color: rgba(219, 169, 1, .9);
   
 }
 
 .spanish {
   width:100%; 
-  background-color: #fdc508;
+
   animation:spanish 2s ease-out;
 }
 
 .galician {
   width:95%;
-  background-color: #e9b301;
+ 
   animation:galician 2s ease-out;
 }
 
 .german {
   width:68%;
-  background-color: rgba(219, 169, 1);
+
   animation: german 2s ease-out;
 
 }
 
 .english {
   width:68%;
-  background-color: #cc9e00;
+
   animation: english 2s ease-out;
 
 }
 .french {
   width:60%;
-  background-color:#b08800;
+
   animation: french 2s ease-out;
 }
 .italian {
   width:55%;
-  background-color: #947200;
+
   animation: italian 2s ease-out;
 }
 
