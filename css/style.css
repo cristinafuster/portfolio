@@ -137,6 +137,7 @@ nav a {
     font-weight: 700;
     color: #000;
 
+
 }
 
 .logo{
@@ -281,6 +282,7 @@ border-color: rgba(219, 169, 1,.5);
 #experience .devider.visible{
   opacity:1;
   border-left: 1px solid rgba(0,0,0, 0.8);
+  font-weight:700;
  
 }
 
@@ -301,20 +303,13 @@ border-color: rgba(219, 169, 1,.5);
   list-style:square;
   color: grey;
   
-
 }
 
-#experience .devider:hover{
 
-  font-weight:700;
-
-
-}
 
 #experience h3:last-child:hover, #experience li:first-child:hover{
 
-border-top: 3px solid rgba(219, 169, 1);
-
+border-top: 1px solid rgba(219, 169, 1);
 
 }
 
@@ -380,47 +375,48 @@ LANGUAGES
 .boton{
 
   opacity:0;
+
 }
 
 .boton.visible{
   opacity: 1;
-  background-color: rgba(219, 169, 1, .9);
+  
   
 }
 
 .spanish {
   width:100%; 
-
+  background-color: rgba(219, 169, 1, .9);
   animation:spanish 2s ease-out;
 }
 
 .galician {
   width:95%;
- 
+  background-color: rgba(219, 169, 1);
   animation:galician 2s ease-out;
 }
 
 .german {
   width:68%;
-
+  background-color: rgba(219, 169, 1);
   animation: german 2s ease-out;
 
 }
 
 .english {
   width:68%;
-
+  background-color: rgba(219, 169, 1);
   animation: english 2s ease-out;
 
 }
 .french {
   width:60%;
-
+  background-color: rgba(219, 169, 1, .8);
   animation: french 2s ease-out;
 }
 .italian {
   width:55%;
-
+  background-color: rgba(219, 169, 1, .7);
   animation: italian 2s ease-out;
 }
 
