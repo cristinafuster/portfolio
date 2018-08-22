@@ -6,14 +6,14 @@ $(window).on('scroll', retraer);
 				
 				if (scrollRealizado > 50) {
 
-					$('nav').css({
+					$('nav.navbar').css({
 						'line-height': '50px',
 						'height': '50px'
 					});
 				
 				} else {
 					
-					$('nav').css({
+					$('nav.navbar').css({
 						'line-height': '90px',
 						'height': '90px'
 					});
