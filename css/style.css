@@ -115,21 +115,16 @@ NAVEGADOR
 
 }
 
-nav  .navbar ul {
-    float: right;
-    margin-right: 20px;
+#navbarNav{
+
+  justify-content:flex-end;
+  margin-right:20px;
 }
 
 
- nav  li {
-    display: inline-block;  
-    list-style: none;
 
-}
-
-nav  a {
+nav a {
     padding: 8px 8px;
-    display: block;
     font-size: .9em;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -147,6 +142,8 @@ nav  a {
   font-weight: 700;
   margin-left:0;
 }
+
+
 .logo:first-letter{
 
   background:black;
