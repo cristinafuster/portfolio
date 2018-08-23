@@ -19,6 +19,7 @@ body::before, body::after {
      z-index: 999;
      height: 10px;  
 
+
 }
  
 body::before {
@@ -99,7 +100,7 @@ li{
 /*------------------------------------------------------
 NAVEGADOR
 ------------------------------------------------------*/
- nav.navbar{
+nav.navbar{
     width: 100%;
     height: 90px; 
     letter-spacing: 2px;
@@ -111,43 +112,50 @@ NAVEGADOR
     line-height: 90px;
     padding: 0 50px;
     border-bottom: 1px dashed #000;
-    background: #eee;
 
 }
 
-#navbarNav{
+
+
+#navbarToggler{
 
   justify-content:flex-end;
-  margin-right:20px;
+  background: #F8F9FA;
+  padding-left: .3em;
+
 }
 
+
+
+#navbar-toggler, nav a, .navbar-brand{
+  outline:none;
+}
 
 
 nav a {
-    padding: 8px 8px;
+
     font-size: .9em;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration:none;
     font-weight: 700;
     color: #000;
-
-
 }
 
-.logo{
+
+.navbar-brand {
 
   font-size: 2em;
   text-transform:uppercase;
   font-weight: 700;
-  margin-left:0;
+  
 }
 
 
-.logo:first-letter{
+.navbar-brand:first-letter{
 
   background:black;
-  color:#eee;
+  color:#fff;
 }
 
 
@@ -239,16 +247,11 @@ transition:all 1.2s ease-in-out;
 }
 
 #education .tooltip::before {
-  border-bottom: 15px solid #DBA901;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  width: 0;
-  height: 0;
-  content: "";
-  display: block;
-  position: absolute;
+  border-bottom: 20px solid #DBA901;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
   bottom: 100%;
-  left: 390px;
+  left: 150px;
 }
 
 
@@ -274,8 +277,6 @@ border-top-style: dotted;
 border-width:1px;
 border-color: rgba(219, 169, 1,.5);
 }
-
-
 
 #experience .devider{
   border-left: 1px solid rgba(0,0,0, 0.1);
@@ -325,6 +326,7 @@ SKILLS, EDUCATION
 content: "\f111";
 font-family: "Font Awesome 5 Free";
 margin-right: 5px;
+font-size: .8rem;
 }
 
 #habilidades h4:before{
@@ -376,52 +378,51 @@ LANGUAGES
   
 }
 
-.boton{
+#languages .boton{
 
   opacity:0;
 
 }
 
-.boton.visible{
+#languages .boton.visible{
   opacity: 1;
-  
   
 }
 
 .spanish {
   width:100%; 
   background-color: rgba(219, 169, 1, .9);
-  animation:spanish 2s ease-out;
+  animation: spanish 6s ease-out;
 }
 
 .galician {
   width:95%;
-  background-color: rgba(219, 169, 1);
-  animation:galician 2s ease-out;
+  background-color: rgba(219, 169, 1, .8);
+  animation: galician 6s ease-out;
 }
 
 .german {
   width:68%;
-  background-color: rgba(219, 169, 1);
-  animation: german 2s ease-out;
+  background-color: rgba(219, 169, 1, .8);
+  animation: german 7s ease-out;
 
 }
 
 .english {
   width:68%;
-  background-color: rgba(219, 169, 1);
-  animation: english 2s ease-out;
+  background-color: rgba(219, 169, 1, .8);
+  animation: english 7s ease-out;
 
 }
 .french {
   width:60%;
-  background-color: rgba(219, 169, 1, .8);
-  animation: french 2s ease-out;
+  background-color: rgba(219, 169, 1, .7);
+  animation: french 8s ease-out;
 }
 .italian {
   width:55%;
-  background-color: rgba(219, 169, 1, .7);
-  animation: italian 2s ease-out;
+  background-color: rgba(219, 169, 1, .6);
+  animation: italian 9s ease-out;
 }
 
 
@@ -468,9 +469,7 @@ LEGAL
 #legal h1{
 
 font-size:2em;
-padding-bottom: 10px;
-padding-top: 10px;
-
+line-height: 2em
 }
 /*------------------------------------------------------
 FOOTER
@@ -484,4 +483,135 @@ footer{
 
 }
 
+/*------------------------------------------------------
+MEDIA QUERIES
+------------------------------------------------------*/
 
+/* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }*/
+
+
+@media (max-width: 768px) { 
+
+
+body::before, body::after{ 
+
+     background: none; }
+
+p {
+    font-size: 0.8em;
+}
+
+h1{
+
+    font-size:1.5em;
+    
+}
+
+
+h2 {
+
+    font-size: 1em;
+
+}
+
+
+h3{
+font-size: 1.1em;
+}
+
+h4{
+
+  font-size: 0.9em;
+}
+
+li{
+
+  font-size: 0.9em;
+}
+
+
+.paddingExtra{
+
+  padding-top: 40px;
+}
+
+.paddingSection{
+  
+  padding: 15px 5px 5px 0px;
+  margin: 0px auto;
+  
+}
+
+
+
+.navbar-brand {
+
+  font-size: 1.5em;
+  
+}
+
+.circulo{
+  border: 0.8px dashed #000; 
+  padding: 0px;
+}
+
+#inicio img{
+
+  left:0;
+  bottom:0;
+  width:70%;
+}
+
+
+.tooltip {
+
+  padding: 0.5em;
+  
+  }
+
+ #education .tooltip, #contact .tooltip {
+
+  padding: 1em 1em;
+ 
+  }
+
+#experience h3,#experience p {
+line-height: 1em;
+font-size: 1em;
+}
+
+#experience ul li:first-of-type{
+  list-style: none;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+#experience li:nth-child(1){
+border-top-style: none;
+}
+
+
+#contact h2{
+
+  font-size:.9em;
+}
+
+#legal h1{
+
+font-size:1em;
+
+
+
+}
+
+}

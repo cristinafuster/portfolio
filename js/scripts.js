@@ -6,14 +6,14 @@ $(window).on('scroll', retraer);
 				
 				if (scrollRealizado > 50) {
 
-					$('nav.navbar').css({
+					$('nav').css({
 						'line-height': '50px',
 						'height': '50px'
 					});
 				
 				} else {
 					
-					$('nav.navbar').css({
+					$('nav').css({
 						'line-height': '90px',
 						'height': '90px'
 					});
@@ -21,7 +21,6 @@ $(window).on('scroll', retraer);
 				}
 			}
 
-///experimento//
 
 $(window).on('scroll', mostrar);
 
@@ -29,19 +28,15 @@ $(window).on('scroll', mostrar);
 
 	let scrollActual = $(window).scrollTop();
 	let altoPantalla = $(window).innerHeight() / 2; 
-	let profundidadBoton  = $('#languages .boton, #experience .devider').offset().top;
+	let profundidadBoton  = $('#experience .devider, #languages .boton').offset().top;
 	let scrollObjetivo = profundidadBoton - altoPantalla;
 
 	if(scrollActual >= scrollObjetivo) {
 
-	$('#languages .boton, #experience .devider').addClass('visible');
+	$('#experience .devider, #languages .boton').addClass('visible');
 
 	}
 }
-
-////fin del experimento///
-
-
 
 
 $(document).ready(function(){
@@ -50,8 +45,6 @@ $(document).ready(function(){
 
 
 });
-
-
 
 
 function navegar(){
@@ -64,5 +57,6 @@ function navegar(){
 		scrollTop: profundidad
 	}, 1000);
 
-	$('.menu').removeClass('abierto');
+	$('#navbarToggler').removeClass('show');
 }
+
