@@ -126,7 +126,6 @@ nav.navbar{
 }
 
 
-
 #navbar-toggler, nav a, .navbar-brand{
   outline:none;
 }
@@ -178,7 +177,7 @@ INICIO, CONTACT
 #contact img{
   border-radius: 30%;
   width:60%;
-  right:5px;
+  left:0;
   top: -25px;
 
 }
@@ -234,7 +233,7 @@ transition:all 1.2s ease-in-out;
   }
 
 .tooltip::before {
-  border-right: 20px solid #DBA901;
+  border-left: 20px solid #DBA901;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   width: 0;
@@ -242,7 +241,7 @@ transition:all 1.2s ease-in-out;
   content: "";
   display: block;
   position: absolute;
-  right: 100%;
+  left: 100%;
   bottom:6em;
 }
 
@@ -503,9 +502,9 @@ MEDIA QUERIES
 @media (max-width: 768px) { 
 
 
-body::before, body::after{ 
+/*body::before, body::after{ 
 
-     background: none; }
+     background: none; }*/
 
 p {
     font-size: 0.8em;
@@ -540,15 +539,11 @@ li{
 }
 
 
-.paddingExtra{
-
-  padding-top: 40px;
-}
 
 .paddingSection{
   
-  padding: 15px 5px 5px 0px;
-  margin: 0px auto;
+  padding: 25px 15px 10px 15px;
+  margin: 5px auto;
   
 }
 
@@ -567,7 +562,7 @@ li{
 
 #inicio img{
 
-  left:0;
+  right:0;
   bottom:0;
   width:70%;
 }

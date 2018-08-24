@@ -7,8 +7,8 @@ $(window).on('scroll', retraer);
 				if (scrollRealizado > 50) {
 
 					$('nav').css({
-						'line-height': '50px',
-						'height': '50px'
+						'line-height': '60px',
+						'height': '60px'
 					});
 				
 				} else {
@@ -27,13 +27,20 @@ $(window).on('scroll', mostrar);
 	function mostrar(){
 
 	let scrollActual = $(window).scrollTop();
-	let altoPantalla = $(window).innerHeight() / 2; 
-	let profundidadBoton  = $('#experience .devider, #languages .boton').offset().top;
-	let scrollObjetivo = profundidadBoton - altoPantalla;
+	let altoPantalla = $(window).innerHeight() / 2;
 
-	if(scrollActual >= scrollObjetivo) {
+	let experience  = $('#experience .devider').offset().top;
+	let languages  = $('#languages .boton').offset().top;
 
-	$('#experience .devider, #languages .boton').addClass('visible');
+	if(scrollActual >= experience - altoPantalla) {
+
+	   $('#experience .devider').addClass('visible');
+
+	}
+
+	if(scrollActual >= languages - altoPantalla) {
+
+	   $('#languages .boton').addClass('visible');
 
 	}
 }
