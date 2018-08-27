@@ -385,51 +385,52 @@ LANGUAGES
 
 #languages .boton.visible{
   opacity: 1;
+  transition: all .1s ease-in;
   
 }
 
 .spanish {
   width:100%; 
   background-color: rgba(219, 169, 1, .9);
-  animation: spanish 6s ease-out;
+  animation: spanish 5s ease-out;
 }
 
 .galician {
   width:95%;
   background-color: rgba(219, 169, 1, .8);
-  animation: galician 6s ease-out;
+  animation: galician 5s ease-out;
 }
 
 .german {
   width:68%;
   background-color: rgba(219, 169, 1, .8);
-  animation: german 7s ease-out;
+  animation: german 4s ease-out;
 
 }
 
 .english {
   width:68%;
   background-color: rgba(219, 169, 1, .8);
-  animation: english 7s ease-out;
+  animation: english 4s ease-out;
 
 }
 .french {
   width:60%;
   background-color: rgba(219, 169, 1, .7);
-  animation: french 8s ease-out;
+  animation: french 4s ease-out;
 }
 .italian {
   width:55%;
   background-color: rgba(219, 169, 1, .6);
-  animation: italian 9s ease-out;
+  animation: italian 4s ease-out;
 }
 
 
 
 @keyframes spanish {0%  { width:0px;} 100%{ width:100%;}  }
-@keyframes galician { 0%  { width:0px;} 100%{ width:95%;}  }
-@keyframes german     { 0%  { width:0px;} 100%{ width:68%;}  }
-@keyframes english   { 0%  { width:0px;} 100%{ width:68%;}  }
+@keyframes galician { 0%  { width:0px;} 100%{ width:97%;}  }
+@keyframes german     { 0%  { width:0px;} 100%{ width:70%;}  }
+@keyframes english   { 0%  { width:0px;} 100%{ width:70%;}  }
 @keyframes french   { 0%  { width:0px;} 100%{ width:60%;}  }
 @keyframes italian   { 0%  { width:0px;} 100%{ width:55%;}  }
 
@@ -558,6 +559,11 @@ li{
 .circulo{
   border: 0.8px dashed #000; 
   padding: 0px;
+}
+
+#inicio h2{
+
+  font-size: .9em
 }
 
 #inicio img{
